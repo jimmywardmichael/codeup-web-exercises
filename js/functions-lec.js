@@ -48,9 +48,9 @@
 //
 // //Arrow function expression
 //
-// const addition = (num, num2) => num + num2;
-//
-// console.log(addition(6,4));
+const addition = (num, num2) => num + num2;
+
+console.log(addition(6,4));
 //
 // //Executing a function with function arguments.
 // console.log(add(add(5,6), add(10,7)));
@@ -63,5 +63,10 @@ let increment = function(x) {
 };
 
 let two = increment(1);
-console.log(two);
+console.log(addition(two, 6));
 
+function shout(message) {
+    alert(message.toUpperCase() + "!!!")
+}
+shout("codeup");
+console.log(shout('codeup'));
