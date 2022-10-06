@@ -1,4 +1,6 @@
-"use strict"
+// function wrapping all code makes it a local instance
+"use strict";
+(function(){
 
 // ================ !! Mini-exercises !!
 
@@ -44,3 +46,15 @@ function isSameLength(aString, aString2) {
 // How many inputs?
 // What type of input?
 // What type of output?
+let globalVar = "Hello, I'm Global!";
+
+function test(){
+    //localVar is only accessible within function block
+    let localVar = "Hello, I'm local!"
+    console.log(globalVar);
+    console.log(localVar);
+}
+console.log(test());
+
+console.log(localVar);
+}());
