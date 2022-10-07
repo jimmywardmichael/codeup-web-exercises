@@ -1,6 +1,6 @@
 "use strict";
 
-
+(function(){
 
     /**
      * TODO:
@@ -115,3 +115,4 @@ function applyDiscount(originalPrice, discountPercentage){
     }
 console.log(applyDiscount(originalPrice, discountPercentage));
 
+})();
