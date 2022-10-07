@@ -11,7 +11,7 @@
      */
 
 function sayHello(name){
-   return name
+   return name;
 }
     console.log(sayHello("Hello, codeup!" ));
     /**
@@ -22,12 +22,12 @@ function sayHello(name){
      * console.log 'helloMessage' to check your work
      */
 function  sayHello1(helloMessage){
-    return helloMessage
+    return helloMessage;
     }
     console.log(sayHello1("James"));
     /**
      * TODO:
-     * Store your name as a string in a variable named 'myName', and pass that
+     * Store your name as a string in a let named 'myName', and pass that
      * variable to the 'sayHello' function. You should see the same output in the
      * console.
      */
@@ -49,7 +49,9 @@ function sayHello2() {
 function isTwo(number){
     return(number === 2);
 }
+    console.log(isTwo(1));
     console.log(isTwo(2));
+    console.log(isTwo(3));
      // * Example
      // * > isTwo(1) // returns false
      // * > isTwo(2) // returns true
@@ -105,6 +107,7 @@ function calculateTip(tipPercentage, bill){
      *
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
+
     let originalPrice = 100;
     let discountPercentage = .2;
 function applyDiscount(originalPrice, discountPercentage){
