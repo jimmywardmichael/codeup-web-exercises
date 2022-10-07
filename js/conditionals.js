@@ -21,7 +21,11 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-
+let colorChoice = blue;
+function analyzeColor(color){
+    return color(prompt("blue is the color of the sky"))
+}
+    console.log(analyzeColor(colorChoice));
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
