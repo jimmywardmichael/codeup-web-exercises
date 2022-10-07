@@ -31,29 +31,40 @@ function  sayHello1(helloMessage){
      * variable to the 'sayHello' function. You should see the same output in the
      * console.
      */
+let myName = "James"
+function sayHello2() {
+    return myName;
+}
+    console.log(sayHello2());
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
- //   var random = Math.floor(Math.random() * 3 + 1);
+ var random = Math.floor(Math.random() * 3 + 1);
 
-    /**
-     * TODO:
-     * Create a function called 'isTwo' that takes a number as a parameter.
-     * The function should return a boolean value based on whether or not the passed
-     * number is the number 2.
 
-     * Example
-     * > isTwo(1) // returns false
-     * > isTwo(2) // returns true
-     * > isTwo(3) // returns false
-     *
-     * Call the function 'isTwo' passing the variable 'random' as a argument.
-     *
-     * console.log *outside of the function* to check your work (you should see a
-     * different result everytime you refresh the page if you are using the random
-     * number)
-     */
-
+     // * TODO:
+     // * Create a function called 'isTwo' that takes a number as a parameter.
+     // * The function should return a boolean value based on whether or not the passed
+     // * number is the number 2.
+function isTwo(number){
+    return(number === 2);
+}
+    console.log(isTwo(2));
+     // * Example
+     // * > isTwo(1) // returns false
+     // * > isTwo(2) // returns true
+     // * > isTwo(3) // returns false
+     // *
+     // * Call the function 'isTwo' passing the variable 'random' as a argument.
+     // *
+     // * console.log *outside of the function* to check your work (you should see a
+     // * different result everytime you refresh the page if you are using the random
+     // * number)
+var random = Math.floor(Math.random() * 3 + 1);
+function isTwo1(number){
+    return (number);
+}
+    console.log(isTwo1(random));
     /**
      * TODO:
      * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -65,14 +76,21 @@ function  sayHello1(helloMessage){
      * > calculateTip(0.25, 25.50) // returns 6.375
      * > calculateTip(0.15, 33.42) // returns 5.013
      */
-
+function calculateTip(tipPercentage, bill){
+    return tipPercentage * bill;
+    }
+    console.log(calculateTip(0.10, 20));
+    console.log(calculateTip(0.20, 40));
+    console.log(calculateTip(0.15, 33.42));
     /**
      * TODO:
      * Use prompt and alert in combination with your calculateTip function to
      * prompt the user for the bill total and a percentage they would like to tip,
      * then display the dollar amount they should tip
      */
-
+    let tipPercentage = prompt("What kind of tip percentage would you like to give?");
+    let billAmount = prompt("What was the total of your bill?");
+    alert(`The tip is $${calculateTip(tipPercentage, billAmount)}`);
     /**
      * TODO:
      * Create a function named `applyDiscount`. This function should accept a price
@@ -87,5 +105,10 @@ function  sayHello1(helloMessage){
      *
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
-
-
+    let originalPrice = 100;
+    let discountPercentage = .2;
+function applyDiscount(originalPrice, discountPercentage){
+    let discountAmount = originalPrice * discountPercentage
+    return originalPrice - discountAmount;
+    }
+console.log(applyDiscount(originalPrice, discountPercentage));
