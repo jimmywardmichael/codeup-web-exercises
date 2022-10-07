@@ -1,5 +1,5 @@
 "use strict";
-(function(){
+(function () {
 
 // if("boolean" === "boolean") {
 //     console.log("Run this code!");
@@ -35,22 +35,36 @@
 //     // if no condition is met, run this code
 // };
 
-let shoes = 'red';
-let shirt = 'hawaiian'
-let jeans = 'denim'
-let jacket = true;
+// let shoes = 'red';
+// let shirt = 'hawaiian'
+// let jeans = 'denim'
+// let jacket = true;
+//
+// if(shoes === 'red'){
+//     console.log("If you're wearing red shoes, you're dismissed.")
+// } else if(shirt === 'hawaiian') {
+//     console.log("If you're wearing a hawaiian shirt, you're dismissed.")
+// } else if(jeans === 'denim') {
+//     console.log("If you're wearing denim jeans, you're dismissed.")
+// } else if (jacket) {
+//     console.log("If you're wearing a jacket, you're dismissed.")
+// } else {
+//     console.log("Everyone else is dismissed!!!")
+// };
+// let num = 3;
+// if(num % 2 === 0 && num % 5 === 0){
+//     console.log("The number is divisible 5, 2, and is an even number");
+// } else if(num % 2 === 0) {
+//     console.log("The number is even and divisible by 2");
+// } else if(num % 5 === 0){
+//     console.log("The number is divisible by 5");
+// } else {
+//     console.log("The number is odd, and not divisible by 5.");
+// };
+    let myName = "Codeup";
 
-if(shoes === 'red'){
-    console.log("If you're wearing red shoes, you're dismissed.")
-} else if(shirt === 'hawaiian') {
-    console.log("If you're wearing a hawaiian shirt, you're dismissed.")
-} else if(jeans === 'denim') {
-    console.log("If you're wearing denim jeans, you're dismissed.")
-} else if (jacket) {
-    console.log("If you're wearing a jacket, you're dismissed.")
-} else {
-    console.log("Everyone else is dismissed!!!")
-};
+    myName === "Codeup" ? console.log("Hello, " + myName) : console.log("Hello stranger!");
+
 
 
 })();
