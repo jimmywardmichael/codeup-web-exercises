@@ -9,10 +9,11 @@
      * Example
      * > sayHello("codeup") // returns "Hello, codeup!"
      */
-    function sayHello(" ") {
-    return prompt("");
-    };
-    console.log("Hello, ", sayHello);
+
+function sayHello(name){
+   return name
+}
+    console.log(sayHello("Hello, codeup!" ));
     /**
      * TODO:
      * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -20,7 +21,10 @@
      *
      * console.log 'helloMessage' to check your work
      */
-
+function  sayHello1(helloMessage){
+    return helloMessage
+    }
+    console.log(sayHello1("James"));
     /**
      * TODO:
      * Store your name as a string in a variable named 'myName', and pass that
@@ -30,14 +34,14 @@
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-    var random = Math.floor(Math.random() * 3 + 1);
+ //   var random = Math.floor(Math.random() * 3 + 1);
 
     /**
      * TODO:
      * Create a function called 'isTwo' that takes a number as a parameter.
      * The function should return a boolean value based on whether or not the passed
      * number is the number 2.
-     *
+
      * Example
      * > isTwo(1) // returns false
      * > isTwo(2) // returns true
