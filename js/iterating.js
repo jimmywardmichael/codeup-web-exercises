@@ -31,8 +31,8 @@ let peoplesName = ['John', 'Jack', 'Jill', 'Jane'];
      * array.
      */
  // loop through the array and log the values
-    for (var i = 0; i < peoplesName.length; i++) {
-        console.log('The first name ' + i + ' is: ' + peoplesName[i]);
+    for (let i = 0; i < peoplesName.length; i++) {
+        console.log(peoplesName[i]);
     }
     /**
      * TODO:
@@ -54,8 +54,20 @@ peoplesName.forEach(function (name ){
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-console.log(peoplesName[0]);
-console.log(peoplesName[1]);
-console.log(peoplesName[2]);
+    function first(arr){
+       return arr[0];
+    }
 
+    function second(arr){
+        return arr[1];
+    }
+
+    function last(arr){
+        return arr[arr.length - 1];
+    }
+
+    let firstIndex = first(peoplesName);
+    console.log(firstIndex)
+    console.log(second(peoplesName))
+    console.log(last(peoplesName))
 })();
