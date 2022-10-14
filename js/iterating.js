@@ -6,25 +6,28 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
+let peoplesName = ['John', 'Jack', 'Jill', 'Jane'];
 
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-
+    console.log(peoplesName[1]);
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-
+    console.log(peoplesName);
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-
+for(peoplesName = peoplesName++){
+    console.log(peoplesName)
+}
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
