@@ -13,26 +13,32 @@ let peoplesName = ['John', 'Jack', 'Jill', 'Jane'];
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-    console.log(peoplesName[1]);
+    console.log(peoplesName);
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-    console.log(peoplesName);
+    console.log(peoplesName[0]);
+    console.log(peoplesName[1]);
+    console.log(peoplesName[2]);
+    console.log(peoplesName[3]);
     /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-for(peoplesName = peoplesName++){
-    console.log(peoplesName)
-}
+ // loop through the array and log the values
+    for (var i = 0; i < peoplesName.length; i++) {
+        console.log('The first name ' + i + ' is: ' + peoplesName[i]);
+    }
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-
+peoplesName.forEach(function (name ){
+    console.log(name)
+    })
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
