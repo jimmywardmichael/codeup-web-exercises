@@ -2,8 +2,8 @@
     "use strict";
 
     let planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    let planetsArray = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
-    let stringPlanetsArray = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+    let planetsArray;
+
 
     /**
      * TODO:
@@ -11,7 +11,7 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-
+planetsArray = planetsString.split("|")
 console.log(planetsArray)
     /**
      * TODO:
@@ -27,4 +27,17 @@ console.log(planetsArray)
 
 
     console.log(planetsArray.join(" <br> "))
+
+    let str;
+    let newPlanetArray = [];
+    planetsArray.forEach(function (planet){
+        console.log(`<li>${planet}</li>`);
+        newPlanetArray.push(`<li>${planet}</li>`)
+    })
+    console.log(newPlanetArray)
+    newPlanetArray.unshift("<ul>")
+    newPlanetArray.push("</ul>")
+    console.log(newPlanetArray)
+    str = newPlanetArray.join();
+    console.log(str)
 })();
