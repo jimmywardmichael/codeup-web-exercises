@@ -5,7 +5,7 @@ let nums = [7, 3, 4, 1, 5, 6, 7, 2, 9, 10, 14, 11, 15, 23, 34]
 // nums.shift();
 // console.log(nums)
 
-// let nameArr = ['jim', 'joe', 'jim', 'john', 'jim', 'bob'];
+let nameArr = ['jim', 'joe', 'jim', 'john', 'jim', 'bob'];
 
 // console.log(nameArr.indexOf('john'));
 // console.log(nameArr.indexOf('jim'));
@@ -22,7 +22,10 @@ let nums = [7, 3, 4, 1, 5, 6, 7, 2, 9, 10, 14, 11, 15, 23, 34]
 // console.log(nameArr)
 //  .sort sorts alphabetically
 //
-// let nameString = "jim, joe, jim, john, jim, bob"
+let nameString = "jim, joe, jim, john, jim, bob"
 // console.log(nameString.split(","))
-nums.sort()
-console.log(nums)
+// nums.sort()
+// console.log(nums)
+
+console.log(nameArr.join(" ||New Name: "))
+// .join("") whatever you put in the quotes it will seperate the index that way
