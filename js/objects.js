@@ -171,4 +171,8 @@ for(let i = 0; i < books.length; i++){
 books.push(createBook("Dragon ball", "Akira Toriyama"))
     console.log(books)
 
+    function showBookInfo(book){
+        console.log(`Book # ${books.indexOf(book) + 1}`)
+    }
+    showBookInfo(books[1])
 })();
