@@ -1,5 +1,5 @@
 html{
-    background-color: lightgrey;
+    background-color: white;
 }
 a1{
     color: white;
@@ -23,4 +23,7 @@ ul1 {
     width: 100%;
     font-size: 30px;
     background-color: black;
+}
+footer{
+    text-decoration: none;
 }
