@@ -27,3 +27,11 @@ ul1 {
 footer{
     text-decoration: none;
 }
+
+table, th, td {
+    border: 1px solid;
+    text-align:center;
+    margin-left:1px;
+    margin-right:auto;
+    width:900px;
+}
