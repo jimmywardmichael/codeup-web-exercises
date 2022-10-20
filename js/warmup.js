@@ -51,19 +51,19 @@
         return !isNaN(parseFloat(input))
     }
 
-  function average(array){
-      let i=0;
-      let sum = 0;
-      while(i < array.length) {
-          if (isNumeric(array[i])) {
-              sum += parseFloat(array[i]);
-              i++;
-          } else {
-              return false;
-          }
-      }
-      return sum / array.length
-  }
+    function average(array){
+        let i=0;
+        let sum = 0;
+        while(i < array.length) {
+            if (isNumeric(array[i])) {
+                sum += parseFloat(array[i]);
+                i++;
+            } else {
+                return false;
+            }
+        }
+        return sum / array.length
+    }
 
     console.log(average(["6", 5, 3, 2, 9]));
     console.log(average([true, 6, 9, 3, 10]));
