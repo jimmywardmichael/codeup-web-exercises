@@ -1,0 +1,48 @@
+/*Element Selector
+ */
+h1 {
+    color: aqua;
+}
+
+/* Class Selector */
+.underline {
+text-decoration: underline;
+}
+/*ID Selector */
+#font24{
+    font-size: 24px;
+}
+/* Multiple selectors - comma seperated*/
+h2, h3 , h4 {
+    color: hotpink;
+}
+
+#lists .national-parks {
+    color: forestgreen;
+}
+
+li.highlight {
+    font-weight: bolder;
+}
+
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
+}
+/*  id selector*/
