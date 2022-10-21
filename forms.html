@@ -16,10 +16,10 @@
   <input id="password" name="password" type="password">
   <br>
 
-  <input type="submit">
-</form>
+
+
 <h2>Bio</h2>
-<textarea name="comment" rows="10" cols="60"></textarea>
+<textarea id="comment"  name="comment" rows="10" cols="60"></textarea>
 <br>
 
 <h1>How did you hear about us?</h1>
@@ -29,24 +29,28 @@ C <input type="radio" name="quiz_question_1" value="c">Internet<br>
 D <input type="radio" name="quiz_question_1" value="d">Other<br>
 
 <br>
-<h2> What browser are you currently using?</h2>
-<form method="POST" action="https://request-inspector.glitch.me/">
-  <input list="browsers">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
-</form>
+
+
+  <label for="operatingSystem">Which operating system do you use?</label>
+  <select name="operatinSystem" id="operatingSystem">
+    <option value="windows">Windows</option>
+    <option value="Linux">Linux</option>
+    <option value="macOS">MacOS</option>
+    <option value="andriod">Andriod</option>
+    <option value="apple">Apple</option>
+  </select>
+
 <br>
 <h2>Would you like to sign up for El Formo Newsletter?</h2>
-<form method="POST" action="https://request-inspector.glitch.me/">
-  <input type="text"  name="username" value="El Formo"> </form>
+
 <select name="newsletter_signup">
   <option  value="n">No</option>
   <option  value="y">Yes</option>
 </select>
+
+<br>
+<input type="submit" button ="submit">
+
+</form>
 </body>
 </html>
