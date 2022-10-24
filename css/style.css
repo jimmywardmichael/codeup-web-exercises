@@ -1,4 +1,29 @@
-h1{
+.fancy-header{
     color: purple;
     text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+    text-decoration: underline;
+}
+html {
+    background-color: lightgrey;
+    background-image: url("https://cdn.pixabay.com/photo/2018/06/17/20/35/chain-3481377_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Work Sans', sans-serif;;
+}
+
+ul{
+    list-style-type: square;
+}
+table {
+    font-size: 25px;
+    padding: 20px;
+}
+
+a:hover{
+    color: red;
 }
