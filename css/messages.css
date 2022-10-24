@@ -16,6 +16,7 @@ body, html {
     margin: 10px;
     width: 75%;
     border-radius: 5px;
+    display: inline-block;
 
 }
 .message-success{
@@ -27,6 +28,7 @@ body, html {
     width: 75%;
     border-style: solid;
     border-radius: 5px;
+    display: inline-block;
 }
 .message-warning{
     border-color: black;
@@ -37,6 +39,7 @@ body, html {
     width: 75%;
     border-style: solid;
     border-radius: 5px;
+    display: inline-block;
 }
 .message-error{
     border-color: black;
@@ -47,4 +50,5 @@ body, html {
     width: 75%;
     border-style: solid;
     border-radius: 5px;
+    display: inline-block;
 }
