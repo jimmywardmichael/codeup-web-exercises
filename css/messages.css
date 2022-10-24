@@ -11,7 +11,7 @@ body, html {
     border-color: black;
     border-style: solid;
     background-color: lightblue;
-    color: black;
+    color: darkblue;
     padding: 10px;
     margin: 10px;
     width: 75%;
@@ -22,7 +22,7 @@ body, html {
 .message-success{
     border-color: black;
     background-color: greenyellow;
-    color: black;
+    color: darkgreen;
     padding: 10px;
     margin: 10px;
     width: 75%;
@@ -33,7 +33,7 @@ body, html {
 .message-warning{
     border-color: black;
     background-color: yellow;
-    color: black;
+    color: darkkhaki;
     padding: 10px;
     margin: 10px;
     width: 75%;
@@ -44,7 +44,7 @@ body, html {
 .message-error{
     border-color: black;
     background-color: red;
-    color: black;
+    color: darkred;
     padding: 10px;
     margin: 10px;
     width: 75%;
