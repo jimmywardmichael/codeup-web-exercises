@@ -27,11 +27,15 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
+    width: 100%;
+    display: inline-block;
 }
 .nav {
     list-style-type: none;
-    padding: 0;
+    padding: 1.5em;
     margin: 0;
+
+
 }
 .nav-link {
     color: var(--main-link-color);

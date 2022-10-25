@@ -47,29 +47,46 @@
 //     average([{name: "Codey the Duck}, 10, 3, false]) // returns false
 //         average([1, 2, 3, 4, 5])                         // returns 3
 //         average(["5.5", "five", 3, 6, 7])                // returns false
-    function isNumeric(input){
-        return !isNaN(parseFloat(input))
-    }
+//     function isNumeric(input){
+//         return !isNaN(parseFloat(input))
+//     }
+//
+//     function average(array){
+//         let i=0;
+//         let sum = 0;
+//         while(i < array.length) {
+//             if (isNumeric(array[i])) {
+//                 sum += parseFloat(array[i]);
+//                 i++;
+//             } else {
+//                 return false;
+//             }
+//         }
+//         return sum / array.length
+//     }
+//
+//     console.log(average(["6", 5, 3, 2, 9]));
+//     console.log(average([true, 6, 9, 3, 10]));
+//     console.log(average(["Codey the Duck", 10, 3, false]));
+//     console.log(average([1, 2, 3, 4, 5]));
+//     console.log(average(["5.5", "five", 3, 6, 7]));
+//
+//    // Warm-up:
 
-    function average(array){
-        let i=0;
-        let sum = 0;
-        while(i < array.length) {
-            if (isNumeric(array[i])) {
-                sum += parseFloat(array[i]);
-                i++;
-            } else {
-                return false;
+    //Create a function named "filterNegativity" that accepts an array of numbers, and returns an array with only positive numbers.
+
+       // Ex: filterNegativity([5, -6, 2, 0, -5, -13]) // returns [5, 2, 0,]
+    const filterNegativity = (arr) => {
+        let positiveArr = [];
+        for (let i = 0; i < arr.length; i++){
+            if(arr[i] >= 0){
+                positiveArr.push(arr[i]);
             }
         }
-        return sum / array.length
+        return positiveArr;
     }
+console.log(filterNegativity([5, -6, 2, 0, -5, -13]))
 
-    console.log(average(["6", 5, 3, 2, 9]));
-    console.log(average([true, 6, 9, 3, 10]));
-    console.log(average(["Codey the Duck", 10, 3, false]));
-    console.log(average([1, 2, 3, 4, 5]));
-    console.log(average(["5.5", "five", 3, 6, 7]));
 })();
 
 
