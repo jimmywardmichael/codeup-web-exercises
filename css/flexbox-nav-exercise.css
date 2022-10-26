@@ -6,7 +6,6 @@ body {
 }
 nav {
     background: grey;
-
 }
 ul {
     list-style: none;
@@ -14,15 +13,14 @@ ul {
     margin: 0;
     display: flex;
     flex-direction: row;
-    /* made unordered list a flex container */
     justify-content: space-evenly;
 }
 nav a {
     text-decoration: none;
     color: black;
     font-family: Verdana;
-    display: inline-block; /* inline-block to increase clickable area beyond the text */
-    padding: 1em; /* increases clickable area of anchor tags on all sides by 1em */
+    display: inline-block;
+    padding: 1em;
     font-weight: bolder;
 }
 nav a1 {
@@ -32,19 +30,12 @@ nav a1 {
     text-decoration: none;
     margin-left: 300px;
     justify-content: space-around;
-    font-weight: inherit;
-
-
-
+    font-weight: bolder;
 }
 nav a:hover {
-    background: black;
+    background: Green;
 }
 
 nav ul li:nth-child(6) {
-    /*
-        this allows the last flex item to be right justified
-        by filling remaining space to the left of the flex item with margin
-    */
     margin-left: auto;
 }
