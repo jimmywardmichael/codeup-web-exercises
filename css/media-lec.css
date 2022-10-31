@@ -47,9 +47,13 @@ i {
 .icons i {
     font-size: 2.2em;
 }
+#container{
+    display: flex;
+}
 /* screen sizes 500px and up */
-@media screen and (min-width:500px) {
-    selector {
-        property: value;
-    }
+@media screen and (max-width:320px) and (min-width: 414px) {
+  #container{
+      align-items: center;
+      flex-direction: column;
+  }
 }
