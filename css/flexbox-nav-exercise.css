@@ -10,7 +10,7 @@ nav {
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -32,9 +32,8 @@ nav a1 {
     justify-content: space-around;
     font-weight: bolder;
 }
-nav a:hover {
+ a:hover {
     color: blue;
-
 }
 
 nav ul li:nth-child(6) {
