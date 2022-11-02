@@ -51,6 +51,7 @@ i {
     display: flex;
 }
 /* screen sizes 500px and up */
+/*small screens*/
 @media screen and (max-width:320px) {
   #container{
       align-items: center;
