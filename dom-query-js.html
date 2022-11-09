@@ -62,7 +62,11 @@
         var subParagraphs = document.getElementsByClassName("sub-paragraph")
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!"
+        let subParagraphButton = document.getElementById('subparaBtn');
+        subParagraphButton.addEventListener('click', function (){
+            subParagraphs[0].innerHTML = "Mission Accomplished!"
+        })
+
     })();
 </script>
 </body>
