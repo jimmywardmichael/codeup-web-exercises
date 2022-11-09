@@ -76,17 +76,20 @@
     //Create a function named "filterNegativity" that accepts an array of numbers, and returns an array with only positive numbers.
 
        // Ex: filterNegativity([5, -6, 2, 0, -5, -13]) // returns [5, 2, 0,]
-    const filterNegativity = (arr) => {
-        let positiveArr = [];
-        for (let i = 0; i < arr.length; i++){
-            if(arr[i] >= 0){
-                positiveArr.push(arr[i]);
-            }
-        }
-        return positiveArr;
-    }
-console.log(filterNegativity([5, -6, 2, 0, -5, -13]))
+//     const filterNegativity = (arr) => {
+//         let positiveArr = [];
+//         for (let i = 0; i < arr.length; i++){
+//             if(arr[i] >= 0){
+//                 positiveArr.push(arr[i]);
+//             }
+//         }
+//         return positiveArr;
+//     }
+// console.log(filterNegativity([5, -6, 2, 0, -5, -13]))
 
+    for(var i = 0; i <= 10; i++) {
+        console.log(i);
+    }
 })();
 
 
