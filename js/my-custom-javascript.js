@@ -11,9 +11,24 @@
     var contents1 = $('#li1').html();
     alert(contents1);
     $('.codeup').css('border', 'solid 1px red')
-    $('li1').css('font-size', '20px')
-    $('li2').css('font-size', '20px')
+    $('li').css('font-size', '20px')
+
     $('h1main').css('background-color', 'yellow')
     $('p').css('background-color', 'yellow')
-
+    $('#h1main').click(
+        function() {
+            $(this).css('background-color', '#FF0');
+        }
+    );
+    $('#para').dblclick(function(e) {
+        $(this).css('font-size', '18px');
+    });
+    $('li').hover(
+        function() {
+            $(this).css('color', 'red');
+        },
+        function() {
+            $(this).css('color', 'black');
+        }
+    );
 })();
