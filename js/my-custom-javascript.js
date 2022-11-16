@@ -1,10 +1,10 @@
 "use strict";
 (function(){
-    // $(function(){
-    //     alert('DOM has finished loading');
-    // })
-//$('selector').html("value changed to")
-//example: $('h2').html("I changed it");
+    $(function(){
+        alert('DOM has finished loading');
+    })
+$('selector').html("value changed to")
+example: $('h2').html("I changed it");
 
     var contents = $('#main').html();
     alert(contents);
@@ -31,4 +31,5 @@
             $(this).css('color', 'black');
         }
     );
+
 })();
