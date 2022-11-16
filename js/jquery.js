@@ -1,3 +1,5 @@
+alert("Can you figure out the Konami Cheat code?")
+
 var KonamiKeys = {
     37: 'left',
     38: 'up',
@@ -40,3 +42,4 @@ function activateCheats() {
     document.body.style.backgroundImage = "url('img/Konami.jpeg')";
     alert("God Mode Activated, 30 lives have been added!!!");
 }
+
