@@ -1,5 +1,5 @@
 "use strict";
 
 window.onload = function() {
-    alert( 'The page has finished loading!' );
+    alert( 'Dom has finished loading!' );
 }
