@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jquery Faq</title>
+    <title>National Parks FAQ jquery</title>
 </head>
 <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 <script>
@@ -11,35 +11,49 @@ $(document).ready(function() {
         $("dd").toggleClass("invisible");
     });
 });
-$(document).ready(function() {
-    $('<dt>').click(function(event) {
-        event.preventDefault();
-        $('<dt>').addClass('highlighted');
-    });
-});
+
 </script>
 <style>
     .invisible {
         visibility: hidden;
     }
-    dt{
-        background-color: yellow;
-    }
-
 </style>
 <body>
-<p>Cryptids of Cornwall:</p>
-
+<p>10 most frequently asked questions:</p>
 <dl>
-  <dt>Beast of Bodmin</dt>
-  <dd class="invisible">A large feline inhabiting Bodmin Moor.</dd>
+  <dt>Who Manages America’s National Parks?</dt>
+  <dd class="invisible">National Park Service (NPS)</dd>
 
-  <dt>Morgawr</dt>
-  <dd class="invisible">A sea serpent.</dd>
+  <dt>What Is a National Park?</dt>
+  <dd class="invisible">“Generally, a national park contains a variety of resources and encompasses large land or water areas to help provide adequate protection of the resources.”</dd>
 
-  <dt>Owlman</dt>
-  <dd class="invisible">A giant owl-like creature.</dd>
+  <dt>How Old Is America’s National Park System?/dt>
+    <dd class="invisible">August 25, 1916</dd>
+
+    <dt>When was the first national park established?</dt>
+    <dd class="invisible">March 1, 1872</dd>
+
+    <dt>What was the name of the first national park?</dt>
+    <dd class="invisible">Yellowstone</dd>
+
+    <dt>How Many National Parks Are There?</dt>
+    <dd class="invisible">63</dd>
+
+    <dt>How Many National Park Service Sites Are There?</dt>
+    <dd class="invisible">423 National Park Service units.</dd>
+
+    <dt>What Does the National Park Service Logo Mean?</dt>
+    <dd class="invisible">different aspects of America’s National Park System.</dd>
+
+    <dt>How Many People Visit America’s National Parks Every Year?</dt>
+    <dd class="invisible">297,115,406.</dd>
+
+    <dt>What Is the Most Visited National Park?</dt>
+    <dd class="invisible">Great Smoky Mountains National Park.</dd>
 </dl>
 <script src="js/jquery_faq.js"></script>
 </body>
 </html>
+
+
+<!--///credit from ///https://www.travel-experience-live.com/frequently-asked-questions-national-parks-->
