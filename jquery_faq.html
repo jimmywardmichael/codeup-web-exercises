@@ -11,11 +11,22 @@ $(document).ready(function() {
         $("dd").toggleClass("invisible");
     });
 });
+$(document).ready(function() {
+    $('<dt>').click(function(event) {
+        event.preventDefault();
+        $('<dt>').addClass('highlighted');
+    });
+});
 </script>
 <style>
-    .invisible{
-    visibility: hidden;
-}</style>
+    .invisible {
+        visibility: hidden;
+    }
+    dt{
+        background-color: yellow;
+    }
+
+</style>
 <body>
 <p>Cryptids of Cornwall:</p>
 
