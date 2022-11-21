@@ -22,7 +22,7 @@
 <div id='map'></div>
 
 <!-- Mapbox JS -->
-<script src="../js/keys.js"></script><!--create keys file that is hidden using gitignore file-->
+<script src="js/keys.js"></script><!--create keys file that is hidden using gitignore file-->
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
@@ -32,7 +32,7 @@
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    zoom: 14,
+    zoom: 10,
     center: [-96.80326437171331, 32.77779919064542]
   });
 
@@ -49,6 +49,45 @@
   //         .setHTML("<p>Web developers!</p>")
 
   marker.setPopup(popup)
+
+  // the  geocode method from mapbox-geocoder-utils.js
+  geocode("900 Jackson St #410, Dallas, TX 75202", MAPBOX_TOKEN).then(function(result) {
+    console.log(result);
+    map.setCenter(result);
+    map.setZoom(15);
+  });
+  reverseGeocode({lng: -96.80326437171331, lat: 32.7777991906454289615}, MAPBOX_TOKEN).then(function(results) {
+    // logs the address for Dallas Founders Square
+    console.log(results);
+  });
+
+  var accessToken = MAPBOX_TOKEN;
+
+  mapboxgl.accessToken = accessToken;
+
+
+
+  var alamoInfo = {
+    address: "Dallas Founder's Square",
+    popupHTML: "<p>Remember the Alamo!</p>"
+  };
+
+  function placeMarkerAndPopup(info, token, map) {
+    geocode(info.address, token).then(function(coordinates) {
+      var popup = new mapboxgl.Popup()
+              .setHTML(info.popupHTML);
+      var marker = new mapboxgl.Marker()
+              .setLngLat(coordinates)
+              .addTo(map)
+              .setPopup(popup);
+
+      popup.addTo(map);
+    });
+  }
+
+  placeMarkerAndPopup(alamoInfo, accessToken, map);
+
+
 </script>
 </body>
 </html>
