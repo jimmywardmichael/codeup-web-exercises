@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geocode Examples</title>
+  <!-- Mapbox CSS -->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- Custom CSS -->
+  <style>
+    h1{
+      color: red;
+      font-weight: bolder;
+    }
+    p{
+      font-weight: bold;
+      font-size: 15px;
+    }
+    #map {
+      /* the width and height may be set to any size */
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>3 unique places to visit in Grapevine, Texas!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src="js/keys.js"></script><!--create keys file that is hidden using gitignore file-->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+<!-- Mapbox Geocoder Util Methods -->
+
+
+<!-- Custom JS -->
+<script>
+  mapboxgl.accessToken = MAPBOX_TOKEN;
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    zoom: 10,
+    center: [-97.07813256006042, 32.932308744136854]
+  });
+
+  // the  geocode method from mapbox-geocoder-utils.js
+  geocode("909 S Main St #110, Grapevine, TX 76051", MAPBOX_TOKEN).then(function(result) {
+    console.log(result);
+    map.setCenter(result);
+    map.setZoom(15);
+  });
+
+
+
+  var marker = new mapboxgl.Marker()
+          .setLngLat([-97.07813256006042, 32.932308744136854])
+          .addTo(map);
+
+  var marker1 = new mapboxgl.Marker()
+          .setLngLat([-97.07819183027725, 32.93552302547229])
+          .addTo(map);
+  var marker2 = new mapboxgl.Marker()
+          .setLngLat([-97.07878850223528, 32.93523023220307, ])
+          .addTo(map);
+  var macPopup = new mapboxgl.Popup()
+          .setHTML("<img src='img/macs.jpeg' height='100px' width='200px'><h1>Mac's on Main!</h1><p>The best prime rib and steakhouse in Texas!</p>")
+
+  var macPopup1 = new mapboxgl.Popup()
+          .setHTML("<img src='img/deli.jpeg' height='100px' width='200px'><h1>Weinbergers Deli!</h1><p>The best Chicago Style Deli in the world!</p>")
+  var macPopup2 = new mapboxgl.Popup()
+          .setHTML("<img src='img/warhammer.jpeg' height='100px' width='200px'><h1>Warhammer<br> Store and Cafe!</h1><p>Unique hobby and coffee/pastry shop!</p>")
+
+  marker.setPopup(macPopup)
+  marker1.setPopup(macPopup1)
+  marker2.setPopup(macPopup2)
+
+
+
+</script>
+</body>
+</html>
