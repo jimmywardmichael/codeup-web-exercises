@@ -13,6 +13,7 @@ a{
 .btn-outline-success {
     color: white;
     border-style: none;
+    background-color: #0d6efd;
 }
 
 .btn-outline-success:hover{
