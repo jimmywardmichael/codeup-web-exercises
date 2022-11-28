@@ -19,3 +19,9 @@ a{
 .btn-outline-success:hover{
    background-color: blue;
 }
+li{
+    list-style: none;
+}
+.mapboxgl-ctrl-geocoder--input{
+
+}
