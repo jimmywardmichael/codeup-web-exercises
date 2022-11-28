@@ -13,15 +13,14 @@ a{
 .btn-outline-success {
     color: white;
     border-style: none;
-    background-color: #0d6efd;
+    display: inherit;
 }
 
 .btn-outline-success:hover{
    background-color: blue;
+    border-color: black;
+    display: inherit;
 }
 li{
     list-style: none;
-}
-.mapboxgl-ctrl-geocoder--input{
-
 }

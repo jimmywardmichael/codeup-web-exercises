@@ -1,16 +1,11 @@
 "use strict"
-$.get("http://api.openweathermap.org/data/2.5/forecast", {
+$.get("http://api.openweathermap.org/data/2.5/onecall", {
     APPID: OPEN_WEATHER_APPID,
-    q:     "San Antonio, US",
+    lat:    29.423017,
+    lon:   -98.48527,
     units: "imperial"
 }).done(function(data) {
-    console.log(data); // log all of JSON object
-    for(let i = 0; i <= 39;  i+=8){
-        console.log(data.list[i].main.temp_max);
-    };
-    console.log(data.list[0].main.temp_max); //  pick out max temp - day 1
-    console.log(data.list[8].main.temp_max); // day 2
-    console.log(data.list[16].main.temp_max); // day 3
-    console.log(data.list[24].main.temp_max); // day 4
-    console.log(data.list[32].main.temp_max); // day 5
+    console.log('The entire response:', data);
+    console.log('Diving in - here is current information: ', data.current);
+    console.log('A step further - information for tomorrow: ', data.daily[1]);
 });
