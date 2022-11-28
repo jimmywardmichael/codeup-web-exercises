@@ -4,7 +4,7 @@
     <title>Online Store</title>
 </head>
 <body>
-
+<link href="json/inventory.json">
 <h1>My Tool Store</h1>
 
 <table id="products">
@@ -25,8 +25,14 @@
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-
+    let data = $.ajax({
+        url: "data/inventory.json",
+        type: "GET"
+    }).done(function(d){
+        return d;
+    })
     // TODO: Take the data from inventory.json and append it to the products table
+    console.log(data);
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
