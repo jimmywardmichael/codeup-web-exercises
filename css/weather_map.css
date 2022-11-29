@@ -14,6 +14,7 @@ a{
     color: white;
     border-style: none;
     display: inherit;
+    background-color: blue;
 }
 
 .btn-outline-success:hover{
