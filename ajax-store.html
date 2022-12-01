@@ -27,7 +27,7 @@
         var html1 = "";
 
         function loadStoreList(){
-            $.get('data/inventory.json').done(function(data) {
+            $.get('json/inventory.json').done(function(data) {
                 console.log(data);
                 for (var i = 0; i <= data.length - 1; i++) {
                     html1 += "<tr>";

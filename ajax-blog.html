@@ -14,7 +14,7 @@
 
     $(document).ready(function(){
         var html1 = "";
-        $.get('data/blog.json').done(function(data) {
+        $.get('json/blog.json').done(function(data) {
             console.log(data);
             for (var i = 0; i <= data.length - 1; i++) {
                 html1 += "<div>";
