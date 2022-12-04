@@ -7,12 +7,4 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
     console.log(data)
 });
 
-let weather = {
-    description: "Sunny",
-    humidity: "20" ,
-    pressure: "10" ,
-    wind: "14mph"
-}
-console.log(weather)
 
-// let readWeather = var index = colors.indexOf('green');
