@@ -33,16 +33,25 @@
 <nav class="navbar bg-light">
     <div class="container-fluid">
         <form class="d-flex" role="search">
-            <label class="place" id="placeName">Place</label>
-            <input class="submitWeather" type="search" placeholder="City, State for forecast " aria-label="Search">
-            <button class="btn btn-outline-success" id="findBtn" type="submit">Find</button>
+            <label class="place" >Place</label>
+            <input class="submitWeather" id="location" type="search" placeholder="City, State for forecast " aria-label="Search">
+            <button class="btn-primary-success" id="weatherLocation" type="text">Find</button>
         </form>
     </div>
 </nav>
-
 <div class="card-group">
     <div class="card">
-        <div class="card-header bg-transparent border-success">Header</div>
+        <div class="card-header bg-transparent border-success"></div>
+        <div class="card-body">
+            <li class="card-temp">Temp: </li>
+            <li class="card-desc">Description: </li>
+            <li class="card-humid">Humidity: </li>
+            <li class="card-wind">Wind: </li>
+            <li class="card-pressure">Pressure: </li>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header bg-transparent border-success"></div>
         <div class="card-body">
             <li class="card-temp">Temp: </li>
             <li class="card-description">Description: </li>
@@ -52,7 +61,7 @@
         </div>
     </div>
     <div class="card">
-        <div class="card-header bg-transparent border-success">Header</div>
+        <div class="card-header bg-transparent border-success"></div>
         <div class="card-body">
             <li class="card-temp">Temp: </li>
             <li class="card-description">Description: </li>
@@ -62,7 +71,7 @@
         </div>
     </div>
     <div class="card">
-        <div class="card-header bg-transparent border-success">Header</div>
+        <div class="card-header bg-transparent border-success"></div>
         <div class="card-body">
             <li class="card-temp">Temp: </li>
             <li class="card-description">Description: </li>
@@ -72,17 +81,7 @@
         </div>
     </div>
     <div class="card">
-        <div class="card-header bg-transparent border-success">Header</div>
-        <div class="card-body">
-            <li class="card-temp">Temp: </li>
-            <li class="card-description">Description: </li>
-            <li class="card-humidity">Humidity: </li>
-            <li class="card-wind">Wind: </li>
-            <li class="card-pressure">Pressure: </li>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-header bg-transparent border-success">Header</div>
+        <div class="card-header bg-transparent border-success"></div>
         <div class="card-body">
             <li class="card-temp">Temp: </li>
             <li class="card-description">Description: </li>
@@ -93,8 +92,29 @@
     </div>
 </div>
 
-<div id="weatherWrapper">
-</div>
+
+
+
+<!--<script>-->
+<!--    function getData(data){-->
+<!--        var html = '<ul>';-->
+<!--        for (var i = 0; i < 40; i += 8) {//we're only going up three days, so we're less than 25-->
+<!--            html+= '<li>';-->
+<!--            html += buildDiv (data.list[i].main.temp,-->
+<!--                data.list[i].main.temp_min,-->
+<!--                data.list[i].main.temp_max,-->
+<!--                data.list[i].weather[0].description,-->
+<!--                data.list[i].main.humidity,-->
+<!--                data.list[i].wind.speed,-->
+<!--                data.list[i].main.pressure,-->
+<!--                data.list[i].weather[0].icon-->
+<!--            );-->
+<!--            html+= '</li>';-->
+<!--        }-->
+<!--        html += '</ul>';-->
+<!--        return html;-->
+<!--    }-->
+<!--</script>-->
 <div id='map'></div>
 <script>
     mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -104,7 +124,6 @@
         zoom: 10,
         center: [-97.07813256006042, 32.932308744136854]
     });
-
 </script>
 
 </body>

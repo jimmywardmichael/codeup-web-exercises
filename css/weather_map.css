@@ -1,26 +1,23 @@
 #map {
     /* the width and height may be set to any size */
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 a{
     text-decoration: none;
     display: flex;
     color: white;
     align-content: space-evenly;
-
 }
-.btn-outline-success {
+.btn-primary-success {
     color: white;
     border-style: none;
     display: inherit;
     background-color: blue;
 }
 
-.navbar:hover{
-   background-color: blue;
-    border-color: black;
-    display: inherit;
+.navbar-weather:hover{
+    color: white;
 }
 li{
     list-style: none;
@@ -32,4 +29,8 @@ li{
     background-color: blue;
     border: white;
     text-align: left;
+}
+.showHumidity{
+    width: 100%;
+    height: 100px;
 }
