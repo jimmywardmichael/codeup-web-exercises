@@ -17,11 +17,19 @@ a{
     background-color: blue;
 }
 
-.btn-outline-success:hover{
+.navbar:hover{
    background-color: blue;
     border-color: black;
     display: inherit;
 }
 li{
     list-style: none;
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    background-color: blue;
+    border: white;
+    text-align: left;
 }
