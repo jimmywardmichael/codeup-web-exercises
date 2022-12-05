@@ -9,6 +9,8 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
 
 }).done(function(data) {
     console.log('5 day forecast', data);
+    console.log('Diving in - here is current information: ', data.current);
+    console.log('A step further - information for tomorrow: ', data.daily[1]);
 });
 
 

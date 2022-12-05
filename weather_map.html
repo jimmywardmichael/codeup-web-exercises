@@ -116,6 +116,7 @@
 <!--    }-->
 <!--</script>-->
 <div id='map'></div>
+<pre id="coordinates" class="coordinates"></pre>
 <script>
     mapboxgl.accessToken = MAPBOX_TOKEN;
     var map = new mapboxgl.Map({
@@ -124,6 +125,19 @@
         zoom: 10,
         center: [-97.07813256006042, 32.932308744136854]
     });
+    const marker = new mapboxgl.Marker({
+        draggable: true
+    })
+        .setLngLat([-97.07813256006042, 32.932308744136854])
+        .addTo(map);
+
+    function onDragEnd() {
+        const lngLat = marker.getLngLat();
+        coordinates.style.display = 'block';
+        coordinates.innerHTML = `Longitude: ${lngLat.lng}<br />Latitude: ${lngLat.lat}`;
+    }
+
+    marker.on('dragend', onDragEnd);
 </script>
 
 </body>
