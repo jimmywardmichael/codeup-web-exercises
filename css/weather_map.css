@@ -72,7 +72,7 @@ main {
     width: 100%;
     height: 40vh;
     overflow: visible;
-    background-color: white;
+    background-color: darkred;
     color: black;
     position: relative;
     padding: 1rem;
@@ -117,16 +117,14 @@ main {
 #map {
     width: 100%;
     height: 500px;
-    margin-bottom: 1rem;
     display: flex;
-    margin-top: 1rem;
-    border: black 2px solid;
+    border: black 10px solid;
 
 }
 
 .coordinates {
     background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: white;
     position: relative;
     bottom: 65px;
     left: 5px;
