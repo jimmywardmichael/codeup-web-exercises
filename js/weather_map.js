@@ -85,7 +85,7 @@
     let append = function (data) {
         let html = ``
         for (let i = 0; i < data.length; i += 8) {
-            // console.log("Data: ", data[i])
+            console.log("Data: ", data[i])
             const {
                 dt_txt,
                 main: {humidity, temp, temp_max, temp_min},
