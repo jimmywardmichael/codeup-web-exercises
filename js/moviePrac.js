@@ -65,7 +65,4 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 /////////////////////////////////////Event Listeners///////////////////////////////////////////////////
-let hideInfo = document.getElementById('movieInfo')
-hideInfo.addEventListener("click", function (e){
-    $('.movieInfo').css('display', 'none')
-})
+
