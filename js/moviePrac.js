@@ -11,4 +11,5 @@ getMovies().then( movies => {
 }).catch(error => console.log(error));
 //-------------------------------------------------------------grabs movies from db.json -----------------------------------------------------------------------//
 
-document
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
