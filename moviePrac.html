@@ -53,7 +53,7 @@
         rating: Teen
         director: Michael Bay
         plot: High-school student Sam Witwicky buys his first car, who is actually the Autobot Bumblebee. Bumblebee defends Sam and his girlfriend Mikaela Banes from the Decepticon Barricade, before the other Autobots arrive on Earth. They are searching for the Allspark, and the war on Earth heats up as the Decepticons attack a United States military base in Qatar. Sam and Mikaela are taken by the top-secret agency Sector 7 to help stop the Decepticons, but when they learn the agency also intends to destroy the Autobots, they formulate their own plan to save the world">Movie Info</a>
-        <a href="#" class="btn btn-danger">Edit</a>
+        <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editBtn">Edit</a>
         <a href="#" class="btn btn-danger">Delete</a>
     </div>
 </div>
@@ -67,7 +67,7 @@
         director: Joss Wheden
         plot: Loki, the adopted brother of Thor, teams-up with the Chitauri Army and uses the Tesseract's power to travel from Asgard to Midgard to plot the invasion of Earth and become a king. The director of the agency S.H.I.E.L.D., Nick Fury, sets in motion project Avengers, joining Tony Stark a.k.a. the Iron Man; Steve Rogers, a.k.a. Captain America; Bruce Banner, a.k.a. The Hulk; Thor; Natasha Romanoff, a.k.a. Black Widow; and Clint Barton, a.k.a. Hawkeye, to save the world from the powerful Loki and the alien invasion"
             >Movie Info</a>
-            <a href="#" class="btn btn-danger">Edit</a>
+            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editBtn">Edit</a>
             <a href="#" class="btn btn-danger">Delete</a>
         </div>
     </div>
@@ -81,7 +81,7 @@
         director: Jon Favreau
         plot: Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters"
             >Movie Info</a>
-            <a href="#" class="btn btn-danger">Edit</a>
+            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editBtn">Edit</a>
             <a href="#" class="btn btn-danger">Delete</a>
         </div>
     </div>
@@ -96,7 +96,7 @@
         plot: With the world now aware of his dual life as the armored superhero Iron Man, billionaire inventor Tony Stark faces pressure from the government, the press, and the public to share his technology with the military. Unwilling to let go of his invention, Stark, along with Pepper Potts, and James Rhodey Rhodes at his side, must forge new alliances - and confront powerful enemies."
 
             >Movie Info</a>
-            <a href="#" class="btn btn-danger">Edit</a>
+            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editBtn">Edit</a>
             <a href="#" class="btn btn-danger">Delete</a>
         </div>
     </div>
@@ -110,11 +110,57 @@
         director: Jon Favreau
         plot: pits brash-but-brilliant industrialist Tony Stark/Iron Man against an enemy whose reach knows no bounds. When Stark finds his personal world destroyed at his enemy's hands, he embarks on a harrowing quest to find those responsible. This journey, at every turn, will test his mettle. With his back against the wall, Stark is left to survive by his own devices, relying on his ingenuity and instincts to protect those closest to him. As he fights his way back, Stark discovers the answer to the question that has secretly haunted him: does the man make the suit or does the suit make the man?"
             >Movie Info</a>
-            <a href="#" class="btn btn-danger">Edit</a>
+            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editBtn">Edit</a>
             <a href="#" class="btn btn-danger">Delete</a>
         </div>
     </div>
 </div>
+<!------------------------------------------------------------------Edit Button Modal------------------------------------------------------------------------->
+
+<div class="modal fade" id="editBtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="row mb-3">
+                    <label for="title" class="col-sm-2 col-form-label">Title: </label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="title">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="genre" class="col-sm-2 col-form-label">Genre: </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="genre">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="rating" class="col-sm-2 col-form-label">Rating: </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="rating">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="director" class="col-sm-2 col-form-label">Director: </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="director">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="plot" class="col-sm-2 col-form-label">Plot: </label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="plot">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-danger">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
 
 <!------------------------------------------------------------------Script Tags ------------------------------------------------------------------------------>
 <script src="js/keys.js"></script>
