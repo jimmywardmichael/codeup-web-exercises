@@ -49,7 +49,7 @@ setTimeout(() => {
             <p class="movie-list-item-desc">Rating: ${movies.rating}</p>
             <p class="movie-list-item-desc">Plot: ${movies.plot}</p>
             </div>
-             <a href="#" type="button" class="btn btn-dark" data-bs-toggle="popover" data-bs-title="Transformers" data-bs-content="">Movie Info</a>
+             <a href="#" type="button"  id="movieInfo" class="btn btn-dark" data-bs-toggle="popover" data-bs-title="Transformers" data-bs-content="">Movie Info</a>
             <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#editBtn">Edit</a>
         <a href="#" class="btn btn-danger">Delete</a>
             </div>
@@ -65,4 +65,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 /////////////////////////////////////Event Listeners///////////////////////////////////////////////////
-
+let hideInfo = document.getElementById('movieInfo')
+hideInfo.addEventListener("click", function (e){
+    $('.movieInfo').css('display', 'none')
+})
