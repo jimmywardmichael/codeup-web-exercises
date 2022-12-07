@@ -1,11 +1,12 @@
 "use strict";
 
-const getMovies = fetch('https://autumn-daffodil-ink.glitch.me/movies')
-Promise.all([getMovies])
-    .then(function (data) {
-        // data of the array goes here
+function getMovies (){
+    return fetch('https://autumn-daffodil-ink.glitch.me/movies')
+        .then(response => response.json())
+}
+getMovies().then( movies => {
+    movies.forEach(title => {
+        console.log(title)
     })
-    .catch(function (error) {
-// handles errors
+}).catch(error => console.log(error));
 
-    });// Ends function
