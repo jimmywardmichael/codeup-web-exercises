@@ -1,5 +1,5 @@
 html{
-    background-color: black;
+    background-color: white;
 }
 #loading {
     display: block;
@@ -14,7 +14,6 @@ html{
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .page    {
     display: none; padding: 0 0.5em;
 }
@@ -24,4 +23,11 @@ html{
 .page p  {
     font-size: 1.5em; line-height: 1.275em; margin-top: 0.15em;
 }
+.movie-list-container{
+    display: flex;
+    align-content: space-evenly;
+    font-family: 'interface', 'Helvetica Neue', 'helvetica', 'sans-serif';
+    font-size: 18px;
+}
+
 

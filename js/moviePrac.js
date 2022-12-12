@@ -65,4 +65,8 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 /////////////////////////////////////Event Listeners///////////////////////////////////////////////////
+$('.btn-dark').click(function (event) {
+    event.preventDefault();
+    console.log("This should work");
 
+});
